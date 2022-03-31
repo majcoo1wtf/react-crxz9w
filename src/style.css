@@ -95,7 +95,7 @@ svg {
   @keyframes pulse-online {
     0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(255, 118, 118, 0.7);
+      box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.363);
     }
     
     70% {
@@ -113,6 +113,24 @@ svg {
 .offline {
   background: #FF4040;
   box-shadow: 0px 0px 10px #FF4040;
+  animation: pulse-offline 2s infinite;
+}
+
+@keyframes pulse-offline {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 64, 64, 1);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+  }
 }
 
 .status {
@@ -122,7 +140,6 @@ svg {
   display: inline-block;
   float: right;
   margin-top: 11px;
-  animation: pulse 2s infinite;
 }
 
 .footerbg {
