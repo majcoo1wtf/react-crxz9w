@@ -218,7 +218,7 @@ svg {
     
     70% {
       transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+      box-shadow: 0 0 0 20px rgba(255, 121, 63, 0);
     }
     
     100% {
